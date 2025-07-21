@@ -1,4 +1,4 @@
-# Digital Egypt Pioneers Initiative (DEPI) – Full-Stack Web Development Diploma
+# DEPI – Full-Stack Web Development Diploma
 
 This repository contains the complete collection of tasks, labs, and project work completed as part of the **Digital Egypt Pioneers Initiative (DEPI)** — a comprehensive diploma program focused on professional full-stack web development.
 
