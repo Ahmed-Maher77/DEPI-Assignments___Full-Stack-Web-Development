@@ -18,7 +18,7 @@ For more information about the Digital Egypt Pioneers Initiative (DEPI), visit t
 
 ---
 
-## 📘 Weekly Assignments
+## 📘 Curriculum Overview
 
 | #   | Course Title                               | Hours | Topics Covered |
 |-----|--------------------------------------------|-------|----------------|
@@ -43,7 +43,7 @@ For more information about the Digital Egypt Pioneers Initiative (DEPI), visit t
 
 ---
 
-## 📘 Curriculum Overview
+## 🖥️ Weekly Assignments
 
 | Week | Assignment | Solution | Live Preview |
 |:----:|----------|:--------:|:------------:|
