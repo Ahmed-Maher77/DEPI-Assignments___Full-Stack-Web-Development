@@ -1,0 +1,313 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
+:root {
+	--trans-3: 0.3s;
+}
+
+/* ====================== Global Styles ====================== */
+/* Custom Select */
+.custom-select {
+	position: relative;
+	width: 100%;
+	background-color: #ffffff;
+	select {
+		display: block;
+		width: 100%;
+		background-color: transparent;
+		padding: 10px;
+		font-size: 1rem;
+		appearance: none;
+		cursor: pointer;
+		position: relative;
+		z-index: 2;
+	}
+	&.active {
+		.icon {
+			transform: rotate(180deg);
+		}
+	}
+	.icon {
+		position: absolute;
+		top: 49%;
+		translate: 0 -50%;
+		right: 14px;
+		color: #000000;
+		font-size: 1rem;
+		transition: 0.3s;
+	}
+}
+
+main {
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* ====================== Login Form & Register Form ====================== */
+#login-form-section,
+#register-form-section {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	width: 95%;
+	max-width: 550px;
+	/* display: none; */
+	h1 {
+		font-size: 1.8rem;
+		margin-bottom: 35px;
+		font-weight: 500;
+		background: linear-gradient(
+			to right,
+			#fff,
+			#559dea,
+			#3579c3,
+			#002d5d,
+			#002d5d
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		-webkit-text-fill-color: transparent; /* For Safari/Chrome */
+		transition: transform var(--trans-3) ease-in-out;
+		&:hover {
+			transform: translateY(-5px);
+		}
+	}
+	.login-form,
+	.register-form {
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+		fieldset {
+			border: none;
+			position: relative;
+			input {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				font-size: 1rem;
+				outline: none;
+				transition: var(--trans-3);
+				padding-left: 35px;
+				&:focus {
+					border-color: #007bff;
+				}
+				&::placeholder {
+					color: #999;
+				}
+			}
+			.input-icon {
+				position: absolute;
+				top: 50%;
+				left: 10px;
+				transform: translateY(-50%);
+				color: #353535;
+			}
+		}
+	}
+	button[type="submit"] {
+		background-color: #007bff;
+		color: #fff;
+		padding: 12px 10px;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+		cursor: pointer;
+		transition: background-color var(--trans-3) ease;
+		margin-top: 20px;
+		&:hover {
+			background-color: #0056b3;
+		}
+	}
+	footer {
+		margin-top: 20px;
+		p {
+			font-size: 0.9rem;
+			color: #777;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			button {
+				border: none;
+				background: none;
+				color: #007bff;
+				cursor: pointer;
+				font-size: 1rem;
+				font-weight: 600;
+				transition: var(--trans-3) ease;
+				&:hover {
+					color: #0056b3;
+					translate: 0 -2px;
+				}
+			}
+		}
+	}
+}
+
+/* ====================== Login Form ====================== */
+#login-form-section {
+	/* display: none; */
+}
+
+/* ====================== Register Form ====================== */
+#register-form-section {
+	display: none;
+	fieldset {
+		select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 1rem;
+			outline: none;
+			transition: var(--trans-3);
+			&:focus {
+				border-color: #007bff;
+			}
+			&::placeholder {
+				color: #999;
+			}
+		}
+	}
+}
+
+/* ====================== Form Validation Styles ====================== */
+.input-field {
+	position: relative;
+}
+
+.input-field .invalid-input {
+	display: flex;
+	height: 0;
+	overflow: hidden;
+	color: rgb(203, 15, 15);
+	margin-block: 4px;
+	border-radius: 3px;
+	align-items: center;
+	gap: 5px;
+	transition: 0.3s;
+	font-size: 0.9rem;
+}
+
+.input-field.activeError fieldset input,
+.input-field.activeError fieldset select {
+	border-color: rgb(203, 15, 15);
+}
+
+.input-field.activeError .invalid-input {
+	height: 100%;
+	padding: 5px 2px;
+}
+
+.input-field .invalid-input span:first-of-type {
+	display: block;
+	color: #fff;
+	background-color: rgb(203, 15, 15);
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	margin-top: -2px;
+}
+
+/* ====================== Popup Message Styles ====================== */
+.popup-message {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 10000;
+	transform: translateX(400px);
+	transition: transform 0.3s ease-in-out;
+}
+
+.popup-message.show {
+	transform: translateX(0);
+}
+
+.popup-content {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+	padding: 16px 20px;
+	min-width: 300px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	border-left: 4px solid #28a745;
+}
+
+.popup-message.success .popup-content {
+	border-left-color: #28a745;
+}
+
+.popup-message.error .popup-content {
+	border-left-color: #dc3545;
+}
+
+.popup-icon {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 14px;
+	flex-shrink: 0;
+}
+
+.popup-message.success .popup-icon {
+	background-color: #28a745;
+	color: #fff;
+}
+
+.popup-message.error .popup-icon {
+	background-color: #dc3545;
+	color: #fff;
+}
+
+.popup-text {
+	flex: 1;
+	font-size: 14px;
+	color: #333;
+	line-height: 1.4;
+}
+
+.popup-close {
+	background: none;
+	border: none;
+	font-size: 18px;
+	color: #999;
+	cursor: pointer;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: all 0.2s ease;
+	flex-shrink: 0;
+}
+
+.popup-close:hover {
+	background-color: #f0f0f0;
+	color: #666;
+}

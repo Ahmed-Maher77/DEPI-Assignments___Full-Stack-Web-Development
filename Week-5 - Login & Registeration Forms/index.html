@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Registeration Form" />
+		<meta name="keywords" content="HTML, CSS, JavaScript" />
+		<meta name="author" content="Ahmed Maher" />
+		<meta name="copyright" content="Ahmed Maher 2025" />
+		<title>Registeration Form</title>
+		<!-- CSS Styles -->
+		<link rel="stylesheet" href="./css/style.css" type="text/css" />
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+			integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<main>
+			<!-- Login Form -->
+			<section id="login-form-section">
+				<h1>Login Form</h1>
+				<form class="login-form" id="login-form">
+					<!-- Email -->
+					<div class="input-field">
+						<fieldset>
+							<label for="login-email">
+								<span class="fa-solid fa-at input-icon"></span>
+							</label>
+							<input
+								type="email"
+								name="email"
+								id="login-email"
+								placeholder="Enter Your Email"
+							/>
+						</fieldset>
+						<div class="invalid-input">
+							<span>!</span> <span>Invalid Email</span>
+						</div>
+					</div>
+					<!-- Password -->
+					<div class="input-field">
+						<fieldset>
+							<label for="login-password">
+								<span
+									class="fa-solid fa-lock input-icon"
+								></span>
+							</label>
+							<input
+								type="password"
+								name="password"
+								id="login-password"
+								placeholder="Enter Your Password"
+							/>
+						</fieldset>
+						<div class="invalid-input">
+							<span>!</span> <span>Invalid Password</span>
+						</div>
+					</div>
+					<!-- Login -->
+					<button type="submit" class="submit-btn">Login</button>
+					<!-- Don't have an account -->
+					<footer>
+						<p>
+							Don't have an account?
+							<button class="switch-register">Register</button>
+						</p>
+					</footer>
+				</form>
+			</section>
+
+			<!-- Registration Form -->
+			<section id="register-form-section">
+				<h1>Register Form</h1>
+				<form class="register-form" id="register-form">
+					<!-- Username -->
+					<div class="input-field">
+						<fieldset>
+							<label for="username">
+								<span
+									class="fa-solid fa-user input-icon"
+								></span>
+							</label>
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="Enter Username"
+							/>
+						</fieldset>
+						<div class="invalid-input">
+							<span>!</span> <span>Invalid Username</span>
+						</div>
+					</div>
+					<!-- Gender -->
+					<div class="input-field">
+						<fieldset>
+							<label for="gender">
+								<span
+									class="fa-solid fa-mars input-icon"
+								></span>
+							</label>
+							<div class="custom-select">
+								<span
+									class="icon fa-solid fa-caret-down"
+								></span>
+								<select name="gender" id="gender">
+									<option value="default">
+										Select Your Gender
+									</option>
+									<option value="male">male</option>
+									<option value="female">female</option>
+									<option value="other">other</option>
+								</select>
+							</div>
+						</fieldset>
+						<div class="invalid-input">
+							<span>!</span>
+							<span>Please select your gender</span>
+						</div>
+					</div>
+					<!-- Age -->
+					<div class="input-field">
+						<fieldset>
+							<label for="age">
+								<span
+									class="fa-solid fa-person input-icon"
+								></span>
+							</label>
+							<input
+								type="number"
+								name="age"
+								id="age"
+								placeholder="Enter Your Age"
+							/>
+						</fieldset>
+						<div class="invalid-input">
+							<span>!</span> <span>Invalid Age</span>
+						</div>
+					</div>
+					<!-- Email -->
+					<div class="input-field">
+						<fieldset>
+							<label for="email">
+								<span class="fa-solid fa-at input-icon"></span>
+							</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Enter Your Email"
+							/>
+						</fieldset>
+						<div class="invalid-input">
+							<span>!</span> <span>Invalid Email</span>
+						</div>
+					</div>
+					<!-- Password -->
+					<div class="input-field">
+						<fieldset>
+							<label for="password">
+								<span
+									class="fa-solid fa-lock input-icon"
+								></span>
+							</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Enter Your Password"
+							/>
+						</fieldset>
+						<div class="invalid-input">
+							<span>!</span> <span>Invalid Password</span>
+						</div>
+					</div>
+					<!-- Confirm Password -->
+					<div class="input-field">
+						<fieldset>
+							<label for="confirm-password">
+								<span
+									class="fa-solid fa-lock input-icon"
+								></span>
+							</label>
+							<input
+								type="password"
+								name="confirm-password"
+								id="confirm-password"
+								placeholder="Confirm Your Password"
+							/>
+						</fieldset>
+						<div class="invalid-input">
+							<span>!</span> <span>Passwords do not match</span>
+						</div>
+					</div>
+					<!-- Register -->
+					<button type="submit" class="submit-btn">Register</button>
+					<!-- Have Account -->
+					<footer>
+						<p>
+							Already have an account?
+							<button class="switch-login">Login</button>
+						</p>
+					</footer>
+				</form>
+			</section>
+		</main>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
