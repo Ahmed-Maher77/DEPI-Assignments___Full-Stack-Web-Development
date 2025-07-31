@@ -41,6 +41,29 @@ For more information about the Digital Egypt Pioneers Initiative (DEPI), visit t
 **Assignments & Practice Hours:** 39  
 **Total Learning Hours:** 159+
 
+---
+
+## 📘 Curriculum Overview
+
+| Week | Assignment | Solution | Live Preview |
+|:----:|----------|:--------:|:------------:|
+| 1   | _                         | _     | _ |
+| 2   | _                           | _    | _ |
+| 3   | _                            | _    | _ |
+| 4   | Header and Navigation Menu                    | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-4%20-%20Header%20and%20Navigation%20Menu)     | [Link 🔗](https://ahmed-maher77.github.io/DEPI-Assignments___Full-Stack-Web-Development/Week-4%20-%20Header%20and%20Navigation%20Menu/) |
+| 5   | Login & Registeration Forms                    | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-5%20-%20Login%20%26%20Registeration%20Forms)    | [Link 🔗](https://ahmed-maher77.github.io/DEPI-Assignments___Full-Stack-Web-Development/Week-5%20-%20Login%20&%20Registeration%20Forms/) |
+<!--
+| 6   | TypeScript                                 | 6     | Types, Interfaces, React Integration |
+| 7   | Bootstrap                                  | 12    | Layouts, Components, Responsive UI |
+| 8   | React.js (Core + Advanced)                 | 33    | Hooks, Routing, Redux, Testing, Performance |
+| 9   | Backend with Node.js & Express             | 12    | REST APIs, MongoDB, JWT, CRUD |
+| 10  | Git & GitHub                               | 3     | Version Control & Collaboration |
+| 11  | Docker & Containerization                  | 3     | Dockerfiles, Compose, Networking |
+| 12  | Code Style & Best Practices                | 3     | Clean Code, State Patterns, Refactoring |
+| 13  | Functional Documentation & Unit Testing    | 3     | TDD, CI/CD Integration, Jest |
+| 14  | Capstone Project                           | 3     | Full-stack app development & deployment |
+-->
+
 
 ---
 
