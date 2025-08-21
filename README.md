@@ -52,10 +52,10 @@ For more information about the Digital Egypt Pioneers Initiative (DEPI), visit t
 | 3   | _                            | _    | _ |
 | 4   | Header and Navigation Menu                    | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-4%20-%20Header%20and%20Navigation%20Menu)     | [Link 🔗](https://ahmed-maher77.github.io/DEPI-Assignments___Full-Stack-Web-Development/Week-4%20-%20Header%20and%20Navigation%20Menu/) |
 | 5   | Login & Registeration Forms                    | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-5%20-%20Login%20%26%20Registeration%20Forms)    | [Link 🔗](https://ahmed-maher77.github.io/DEPI-Assignments___Full-Stack-Web-Development/Week-5%20-%20Login%20&%20Registeration%20Forms/) |
+| 6   | _                                 | _     | _ |
+| 7   | Ahmed-Maher-Portfolio v1                                  | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-7%20-%20Ahmed-Maher-Portfolio%20v1)    | [Link 🔗](https://ahmed-maher77.github.io/Minimalfolio__Personal-Portfolio-Website/) |
+| 8   | DEPI Countdown Timer                 | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-8%20-%20DEPI%20Countdown%20Timer)    | [Link 🔗](https://ahmed-maher77.github.io/Depi-Countdown-Timer/) |
 <!--
-| 6   | TypeScript                                 | 6     | Types, Interfaces, React Integration |
-| 7   | Bootstrap                                  | 12    | Layouts, Components, Responsive UI |
-| 8   | React.js (Core + Advanced)                 | 33    | Hooks, Routing, Redux, Testing, Performance |
 | 9   | Backend with Node.js & Express             | 12    | REST APIs, MongoDB, JWT, CRUD |
 | 10  | Git & GitHub                               | 3     | Version Control & Collaboration |
 | 11  | Docker & Containerization                  | 3     | Dockerfiles, Compose, Networking |
