@@ -92,5 +92,17 @@ Software Engineer | Full-Stack Developer
 
 This repository is part of my personal and professional learning journey through the DEPI Full-Stack Diploma. All content is for educational and showcase purposes.
 
+<hr/>
+
+## 📬 Contact & Contribution
+- 🧑‍💻 **Portfolio:** <a href="https://ahmedmaher-portfolio.vercel.app/" title="See My Portfolio">https://ahmedmaher-portfolio.vercel.app/</a>
+- 🔗 **LinkedIn:** <a href="https://www.linkedin.com/in/ahmed-maher-algohary" title="Contact via LinkedIn">https://www.linkedin.com/in/ahmed-maher-algohary</a>
+- 📧 **Email:** <a href="mailto:ahmedmaher.dev1@gmail.com" title="Contact via Email">ahmedmaher.dev1@gmail.com</a>
+
+---
+
+## ⭐ Support
+
+If you found this Repo helpful or inspiring, please consider giving it a ⭐. 
 
 
