@@ -54,7 +54,7 @@ For more information about the Digital Egypt Pioneers Initiative (DEPI), visit t
 | 5   | Login & Registeration Forms                    | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-5%20-%20Login%20%26%20Registeration%20Forms)    | [Link 🔗](https://ahmed-maher77.github.io/DEPI-Assignments___Full-Stack-Web-Development/Week-5%20-%20Login%20&%20Registeration%20Forms/) |
 | 6   | _                                 | _     | _ |
 | 7   | Ahmed-Maher-Portfolio v1                                  | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-7%20-%20Ahmed-Maher-Portfolio%20v1)    | [Link 🔗](https://ahmed-maher77.github.io/Minimalfolio__Personal-Portfolio-Website/) |
-| 8   | DEPI Countdown Timer                 | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-8%20-%20DEPI%20Countdown%20Timer)    | [Link 🔗](https://ahmed-maher77.github.io/Depi-Countdown-Timer/) |
+| 8   | DEPI Time Tools — Clock & Stopwatch                 | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-8%20-%20DEPI%20Countdown%20Timer)    | [Link 🔗](https://ahmed-maher77.github.io/Depi-Countdown-Timer/) |
 <!--
 | 9   | Backend with Node.js & Express             | 12    | REST APIs, MongoDB, JWT, CRUD |
 | 10  | Git & GitHub                               | 3     | Version Control & Collaboration |
