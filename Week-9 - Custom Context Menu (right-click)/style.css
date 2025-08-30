@@ -1,0 +1,125 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #0468d2;
+	color: #333;
+}
+
+ul {
+	list-style: none;
+}
+
+/* ================================== CONTEXT MENU CONTAINER ================================== */
+.context-menu {
+	width: 250px;
+	position: fixed;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	display: none;
+	outline: none;
+}
+
+.context-menu ul {
+	padding: 8px 0;
+}
+
+/* Menu Items */
+.context-menu li {
+	padding: 12px;
+	cursor: pointer;
+	transition: background 0.2s;
+	margin: 0 10px;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	outline: none;
+}
+
+.context-menu li:hover,
+.context-menu li:focus {
+	background: #f0f0f0;
+}
+
+.context-menu ul li i {
+	font-size: 1.1rem;
+	color: #000;
+}
+
+/* Share Functionality */
+.context-menu ul .share-wrapper {
+	position: relative;
+}
+
+/* Share Sublist */
+.context-menu ul .share-wrapper ul {
+	min-width: 200px;
+	max-width: 200px;
+	display: none;
+	position: absolute;
+	left: calc(100% - 5px);
+	top: 0;
+	margin-left: 0;
+	padding: 8px 0;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1001;
+}
+
+/* Left-Side Positioning Adjustments */
+.context-menu ul .share-wrapper ul[style*="right"] {
+	margin-right: 8px;
+}
+
+/* Share Arrow Indicator */
+.context-menu ul .share-wrapper .right-arrow {
+	position: absolute;
+	right: 12px;
+	transition: transform 0.2s;
+}
+
+.context-menu ul .share-wrapper:hover .right-arrow,
+.context-menu ul .share-wrapper:focus .right-arrow {
+	transform: rotate(90deg);
+}
+/* Separator Line */
+.context-menu .separator {
+	height: 1px;
+	background: #e0e0e0;
+	margin: 8px 0;
+}
+/* Focus indicators for keyboard navigation */
+.context-menu li:focus-visible {
+	box-shadow: 0 0 0 2px #0468d2;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.context-menu {
+		border: 2px solid #000;
+	}
+
+	.context-menu li:hover,
+	.context-menu li:focus {
+		background: #000;
+		color: #fff;
+	}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	.context-menu ul .share-wrapper .right-arrow {
+		transition: none;
+	}
+}

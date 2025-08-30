@@ -86,9 +86,7 @@
 	<body>
 		<!-- Header -->
 		<header>
-			<div
-				class="container d-flex justify-content-between align-items-center py-2"
-			>
+			<div class="container d-flex justify-content-between align-items-center py-2">
 				<img class="logo" src="images/depi-logo.png" alt="logo" />
 				<p class="w-100 text-center mb-0 fw-medium main-color">
 					Your Ultimate Time Tools
@@ -105,23 +103,21 @@
 			</div>
 
 			<!-- Main Container -->
-			<div
-				class="main-container main-color p-16rem max-w-900 dark-blue-bg rounded-3 blur-bg-main"
-			>
+			<div class="main-container main-color p-16rem max-w-900 dark-blue-bg rounded-3 blur-bg-main">
 				<!-- Tab Navigation -->
-				<div class="tab-navigation mb-4">
+				<nav class="tab-navigation mb-4">
 					<button class="tab-btn active" data-tab="clock">
 						<i class="fas fa-clock me-2"></i>Clock
 					</button>
 					<button class="tab-btn" data-tab="stopwatch">
 						<i class="fas fa-stopwatch me-2"></i>Stopwatch
 					</button>
-				</div>
+				</nav>
 
 				<!-- Tab Content -->
 				<div class="tab-content">
 					<!-- Clock Tab -->
-					<div id="clock-tab" class="tab-pane active">
+					<section id="clock-tab" class="tab-pane active">
 						<div class="clock-display text-center">
 							<div class="time-display">
 								<span id="hours" class="time-unit">00</span>
@@ -137,10 +133,10 @@
 								<span id="timezone">Local Time</span>
 							</div>
 						</div>
-					</div>
+					</section>
 
 					<!-- Stopwatch Tab -->
-					<div id="stopwatch-tab" class="tab-pane">
+					<section id="stopwatch-tab" class="tab-pane">
 						<div class="stopwatch-display text-center">
 							<div class="time-display">
 								<span id="sw-hours" class="time-unit">00</span>
@@ -186,7 +182,7 @@
 								<div class="lap-list" id="lap-list"></div>
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
 			</div>
 		</main>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Context Menu Demo</title>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+		<!-- CSS Styles -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Main Context Menu Container -->
+		<section class="context-menu" role="menu" aria-label="Context menu" tabindex="-1" aria-hidden="true">
+			<ul class="main-context-list">
+				<!-- Preview Action -->
+				<li role="menuitem" tabindex="0" aria-label="Preview item">
+					<i class="fas fa-eye" aria-hidden="true"></i>
+					<span>Preview</span>
+				</li>
+
+				<!-- Share Menu with Sublist -->
+				<li class="share-wrapper" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-label="Share options">
+					<i class="fas fa-share-alt" aria-hidden="true"></i>
+					<span>Share</span>
+
+					<!-- Share Options Submenu -->
+					<ul role="menu" aria-label="Share options submenu">
+						<li role="menuitem" tabindex="0" aria-label="Share on LinkedIn">
+							<i class="fab fa-linkedin" aria-hidden="true"></i>
+							<span>LinkedIn</span>
+						</li>
+						<li role="menuitem" tabindex="0" aria-label="Share on Facebook">
+							<i class="fab fa-facebook" aria-hidden="true"></i>
+							<span>Facebook</span>
+						</li>
+						<li role="menuitem" tabindex="0" aria-label="Share on Telegram">
+							<i class="fab fa-telegram" aria-hidden="true"></i>
+							<span>Telegram</span>
+						</li>
+						<li role="menuitem" tabindex="0" aria-label="Share on Instagram">
+							<i class="fab fa-instagram" aria-hidden="true"></i>
+							<span>Instagram</span>
+						</li>
+					</ul>
+
+					<!-- Expand Indicator Arrow -->
+					<i class="fas fa-chevron-right right-arrow" aria-hidden="true" aria-label="Expand share options"></i>
+				</li>
+
+				<!-- File Operations -->
+				<li role="menuitem" tabindex="0" aria-label="Copy link">
+					<i class="fas fa-link" aria-hidden="true"></i>
+					<span>Copy Link</span>
+				</li>
+				<li role="menuitem" tabindex="0" aria-label="Rename item">
+					<i class="fas fa-edit" aria-hidden="true"></i>
+					<span>Rename</span>
+				</li>
+				<li role="menuitem" tabindex="0" aria-label="Delete item">
+					<i class="fas fa-trash" aria-hidden="true"></i>
+					<span>Delete</span>
+				</li>
+
+				<!-- Visual separator -->
+				<div class="separator" role="separator" aria-hidden="true"></div>
+
+				<!-- Settings -->
+				<li role="menuitem" tabindex="0" aria-label="Settings">
+					<i class="fas fa-cog" aria-hidden="true"></i>
+					<span>Settings</span>
+				</li>
+			</ul>
+		</section>
+
+		<!-- JavaScript functionality -->
+		<script src="script.js"></script>
+	</body>
+</html>
