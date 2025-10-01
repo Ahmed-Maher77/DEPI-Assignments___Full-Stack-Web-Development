@@ -55,6 +55,8 @@ For more information about the Digital Egypt Pioneers Initiative (DEPI), visit t
 | 6   | _                                 | _     | _ |
 | 7   | Ahmed-Maher-Portfolio v1                                  | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-7%20-%20Ahmed-Maher-Portfolio%20v1)    | [Link 🔗](https://ahmed-maher77.github.io/Minimalfolio__Personal-Portfolio-Website/) |
 | 8   | DEPI Time Tools — Clock & Stopwatch                 | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-8%20-%20DEPI%20Time%20Tools%20%E2%80%94%20Clock%20%26%20Stopwatch)    | [Link 🔗](https://ahmed-maher77.github.io/DEPI-Time-Tools__Clock-and-Stopwatch/) |
+| 9   | Custom Context Menu (right-click)                 | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-9%20-%20Custom%20Context%20Menu%20(right-click))    | [Link 🔗](https://ahmed-maher77.github.io/DEPI-Assignments___Full-Stack-Web-Development/Week-9%20-%20Custom%20Context%20Menu%20(right-click)/) |
+| 10  | Gallery (Professional Image Slider)                 | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-9%20-%20Gallery%20(Professional%20Image%20Slider))    | [Link 🔗](https://ahmed-maher77.github.io/Gallery___Professional-Image-Slider/) |
 <!--
 | 9   | Backend with Node.js & Express             | 12    | REST APIs, MongoDB, JWT, CRUD |
 | 10  | Git & GitHub                               | 3     | Version Control & Collaboration |
