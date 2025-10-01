@@ -1,0 +1,84 @@
+.service-card {
+    background: var(--white-fixed-c);
+    color: var(--black-fixed-c);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform var(--trans-3), box-shadow var(--trans-3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.1);
+    }
+
+    &__icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #f3f3f3;
+        color: var(--black-fixed-c);
+        i {
+            font-size: 26px;
+        }
+    }
+
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 6px 0 2px;
+    }
+    &__desc {
+        color: var(--c-gray);
+        margin: 0;
+    }
+}
+
+// Service Details Modal Styles
+.service-details {
+    max-width: 500px;
+    margin: 0 auto;
+
+    &__icon {
+        color: var(--green-c);
+    }
+
+    &__content {
+        h4 {
+            color: var(--black-fixed-c);
+            font-weight: 700;
+        }
+    }
+
+    &__description {
+        color: var(--c-gray);
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+
+    &__features {
+        h5 {
+            color: var(--black-fixed-c);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        ul li {
+            color: var(--c-gray);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

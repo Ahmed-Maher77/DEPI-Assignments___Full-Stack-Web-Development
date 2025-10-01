@@ -1,0 +1,201 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* =================== CSS Variables =================== */
+:root {
+    --white-c: #fff;
+    --white-fixed-c: #fff;
+    --black-c: #000;
+    --black-fixed-c: #000;
+    --bg-black-c: #000;
+    --off-white-c: #eeeeee;
+    --green-c: rgb(0, 114, 99);
+    --green-dark-c: #004138;
+    --red-c: #ff0000;
+    // Navbar
+    --c-gray: #606060;
+    --c-light-gray: #808080;
+    --c-light-gray: #8d8d8d;
+    --c-pink: #bf83a6;
+    // Transition
+    --trans-3: 0.3s;
+    /* Animations */
+    --anim-fast: 450ms;
+    --anim-base: 900ms;
+    --anim-slow: 1100ms;
+}
+
+/* =================== Global Styles =================== */
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif !important;
+    background-color: var(--c-white) !important;
+    color: var(--c-black) !important;
+    font-size: 16px !important;
+    scroll-behavior: smooth;
+}
+
+/* =================== Reusable Styles =================== */
+// Colors
+.white-c {
+    color: var(--white-c);
+}
+.off-white-c {
+    color: var(--off-white-c);
+}
+.black-c {
+    color: var(--black-c);
+}
+.gray-c {
+    color: var(--c-gray);
+    transition: var(--trans-3);
+    &.accept-hover {
+        &:hover {
+            color: var(--black-c);
+        }
+    }
+}
+.green-c {
+    color: var(--green-c);
+    transition: all 0.4s ease-in-out;
+    &.accept-hover {
+        &:hover {
+            color: var(--green-dark-c);
+        }
+    }
+}
+
+// Cursor
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// Buttons
+.main-btn {
+    font-size: 1.1rem;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    z-index: 99;
+    color: var(--white-fixed-c);
+    &:hover {
+        color: var(--black-fixed-c);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        transition-duration: 0.2s;
+        border-radius: inherit;
+    }
+    &:hover::before {
+        width: 100%;
+    }
+    &.black-btn {
+        background-color: var(--black-fixed-c);
+        border: 1px solid var(--black-fixed-c);
+        z-index: 99;
+        &:before {
+            background-color: var(--white-fixed-c);
+            border-color: var(--white-fixed-c);
+            z-index: -1;
+        }
+    }
+}
+
+// Links
+.animated-hover-link {
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
+        background-color: var(--green-c);
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+// Icons
+.rotated-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid var(--black-c);
+    color: var(--black-c);
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+
+    i {
+        font-size: 24px;
+    }
+
+    &:hover {
+        rotate: 360deg;
+        background-color: var(--black-c);
+        color: var(--white-c);
+    }
+}
+
+.rotated-view-icon {
+    i.bx-down-arrow-circle {
+        rotate: -90deg !important;
+        transition: var(--trans-3);
+    }
+    &:hover {
+        i.bx-down-arrow-circle {
+            rotate: -135deg !important;
+            color: var(--black-c);
+        }
+    }
+}
+
+
+
+// =================== Screen Reader Only ===================
+// Screen reader only class
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+// Screen reader only but focusable
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}

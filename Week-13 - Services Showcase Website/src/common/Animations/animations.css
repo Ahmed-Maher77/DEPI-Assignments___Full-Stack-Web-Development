@@ -1,0 +1,68 @@
+/* Basic animation utilities */
+/* Initial states */
+[data-anim] {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+    will-change: opacity, transform;
+}
+
+/* Variants (extended durations) */
+[data-anim="fade-in"].is-visible {
+    opacity: 1;
+    transform: none;
+    transition: opacity var(--anim-base) ease, transform var(--anim-base) ease;
+}
+[data-anim="slide-up"].is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity var(--anim-base) ease,
+        transform var(--anim-slow) cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+[data-anim="zoom-in"].is-visible {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity var(--anim-fast) ease, transform var(--anim-fast) ease;
+}
+
+/* Different initial for zoom-in */
+[data-anim="zoom-in"] {
+    transform: scale(0.96);
+}
+
+/* Optional delays */
+[data-anim-delay="0"] {
+    transition-delay: 0ms;
+}
+[data-anim-delay="200"] {
+    transition-delay: 200ms;
+}
+[data-anim-delay="400"] {
+    transition-delay: 400ms;
+}
+[data-anim-delay="600"] {
+    transition-delay: 600ms;
+}
+[data-anim-delay="800"] {
+    transition-delay: 800ms;
+}
+[data-anim-delay="1000"] {
+    transition-delay: 1000ms;
+}
+[data-anim-delay="1200"] {
+    transition-delay: 1200ms;
+}
+[data-anim-delay="1400"] {
+    transition-delay: 1400ms;
+}
+[data-anim-delay="1600"] {
+    transition-delay: 1600ms;
+}
+[data-anim-delay="1800"] {
+    transition-delay: 1800ms;
+}
+[data-anim-delay="2000"] {
+    transition-delay: 2000ms;
+}
+[data-anim-delay="2200"] {
+    transition-delay: 2200ms;
+}

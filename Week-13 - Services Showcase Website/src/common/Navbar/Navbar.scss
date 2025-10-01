@@ -1,0 +1,152 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    &.showMenu::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #00000078;
+    }
+    ul {
+        transform: translateX(100%);
+        background-color: #fff;
+        padding: 0;
+        width: 350px;
+        height: 100%;
+        transition: var(--trans-3);
+        list-style: none;
+    }
+
+    ul.show {
+        transform: translateX(0);
+    }
+    a.active {
+        background-color: var(--c-black);
+        color: var(--c-white);
+    }
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+    .bx-menu-alt-right {
+        font-size: 3.3rem !important;
+        transition: var(--trans-3);
+        &:hover {
+            color: var(--c-gray);
+        }
+    }
+    // Colors
+    .bg-black {
+        background-color: var(--c-black);
+    }
+    .c-black {
+        color: var(--c-black);
+    }
+    .c-white {
+        color: var(--c-white);
+    }
+    .c-gray {
+        color: var(--c-gray);
+        transition: var(--trans-3);
+    }
+    .c-light-gray {
+        color: var(--c-light-gray);
+        transition: var(--trans-3);
+    }
+    li.c-light-gray:hover {
+        color: var(--c-gray);
+    }
+    a.c-gray:not(.active):hover {
+        color: #000;
+    }
+
+    /* Dimensions */
+    .he-50 {
+        height: 50px !important;
+    }
+
+    /* Fonts */
+    .fs-big {
+        font-size: 2.7rem !important;
+    }
+    .fs-little-big {
+        font-size: 1.8rem !important;
+    }
+    .fs-small {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #navbar {
+        .toggleBtn,
+        .backMenu {
+            display: none !important;
+        }
+        ul {
+            width: 100%;
+            background-color: transparent;
+            li a {
+                &.active {
+                    color: #000000 !important;
+                    &::after {
+                        background-color: #000000 !important;
+                    }
+                }
+                color: #5e5e5e !important;
+                &:not(.active):hover {
+                    color: #272727 !important;
+                }
+            }
+        }
+        ul.position-fixed {
+            position: relative !important;
+            transform: translateX(0);
+            flex-direction: row !important;
+            align-items: center;
+            margin-bottom: 0;
+            justify-content: end;
+            gap: 3px !important;
+        }
+        ul a {
+            font-size: 1.1rem !important;
+            padding: 8px 12px !important;
+            margin-top: 0 !important;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0;
+                background-color: var(--black-c);
+                bottom: -1px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: width 0.3s ease;
+            }
+        }
+
+        a.active {
+            background-color: transparent;
+            color: var(--c-black);
+            position: relative;
+
+        }
+        a.active::after, a:not(.active):hover::after {
+            width: 40%;
+        }
+        ul a.border-bottom {
+            font-weight: 500 !important;
+            border: none !important;
+            padding: 8px 12px !important;
+        }
+    }
+}
