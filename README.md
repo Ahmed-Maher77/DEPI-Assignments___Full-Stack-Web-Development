@@ -59,6 +59,7 @@ For more information about the Digital Egypt Pioneers Initiative (DEPI), visit t
 | 10  | Gallery (Professional Image Slider)                 | [Link 🔗](https://github.com/Ahmed-Maher77/DEPI-Assignments___Full-Stack-Web-Development/tree/main/Week-9%20-%20Gallery%20(Professional%20Image%20Slider))    | [Link 🔗](https://ahmed-maher77.github.io/Gallery___Professional-Image-Slider/) |
 | 12  | Bootstrap Navbar                 | [Link 🔗](https://github.com/Ahmed-Maher77/Services-Showcase-Website)    | [Link 🔗](https://ahmed-maher77.github.io/Services-Showcase-Website/) |
 | 13  | Services Showcase Website                 | [Link 🔗](https://github.com/Ahmed-Maher77/Services-Showcase-Website)    | [Link 🔗](https://ahmed-maher77.github.io/Services-Showcase-Website/) |
+| 14  | Mawaqit Arabia – Islamic Prayer Times                 | [Link 🔗](https://github.com/Ahmed-Maher77/Mawaqit-Arabia___Islamic-Prayer-Times)    | [Link 🔗](https://ahmed-maher77.github.io/Mawaqit-Arabia___Islamic-Prayer-Times/) |
 <!--
 | 9   | Backend with Node.js & Express             | 12    | REST APIs, MongoDB, JWT, CRUD |
 | 10  | Git & GitHub                               | 3     | Version Control & Collaboration |
