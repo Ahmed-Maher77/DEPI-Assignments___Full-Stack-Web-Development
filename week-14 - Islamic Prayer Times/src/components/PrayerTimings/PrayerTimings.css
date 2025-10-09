@@ -1,0 +1,39 @@
+/* ================== Prayer Timings Styles ================== */
+.prayer-timings h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.timings-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background: #a54f3aba;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    font-size: 1.3rem;
+}
+
+.timing-item:hover {
+    transform: translateY(-2px);
+}
+
+.prayer-name {
+    font-weight: 600;
+    text-align: right;
+}
+
+.prayer-time {
+    font-weight: 500;
+    text-align: left;
+}

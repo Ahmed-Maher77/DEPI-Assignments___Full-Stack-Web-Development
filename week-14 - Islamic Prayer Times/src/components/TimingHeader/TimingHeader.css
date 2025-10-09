@@ -1,0 +1,50 @@
+/* ================== Timing Header Styles ================== */
+header {
+    background: transparent;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    border-bottom: 2px solid #ffffff3b;
+    padding-bottom: 40px;
+}
+
+.city,
+.date {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city h1,
+.date h1 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.date span {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* ================== Media Queries ================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+    .city .custom-select {
+        margin-top: 5px;
+    }
+
+    .city,
+    .date {
+        align-items: flex-start;
+    }
+}

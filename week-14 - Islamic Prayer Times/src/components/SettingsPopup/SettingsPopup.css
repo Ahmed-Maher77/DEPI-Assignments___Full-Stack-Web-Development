@@ -1,0 +1,361 @@
+/* ================== Settings Components ================== */
+.settings-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.settings-icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.settings-icon svg {
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+}
+
+.settings-icon:hover svg {
+    transform: rotate(90deg);
+}
+
+.settings-icon.active {
+    background: var(--primary-color);
+    border-color: #fff;
+}
+
+/* Settings Popup */
+.settings-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.settings-popup-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+    position: relative;
+    width: 95%;
+    max-width: 500px;
+    animation: slideInUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    will-change: transform, opacity;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Exit animations */
+.settings-popup-overlay.fade-out {
+    animation: fadeOut 0.3s ease-in;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.settings-popup-container.slide-out-down {
+    animation: slideOutDown 0.3s ease-in;
+}
+
+@keyframes slideOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+}
+
+.settings-popup {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 18px;
+    width: 100%;
+    max-height: 85vh;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.settings-popup__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    color: white;
+    border-radius: 18px 18px 0 0;
+}
+
+.settings-popup__header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.settings-popup__close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.settings-popup__close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.settings-popup__content {
+    padding: 15px 32px;
+    max-height: 60vh;
+    overflow-y: auto;
+    will-change: scroll-position;
+}
+
+.settings-popup__content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.settings-popup__content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.settings-popup__content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.settings-popup__content::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.settings-section {
+    margin-bottom: 20px;
+    background: rgba(248, 250, 252, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 10px;
+}
+.settings-popup__prayer-visibility {
+    padding: 0;
+}
+.settings-popup__prayer-visibility h3 {
+    padding: 11px 14px 0 0;
+}
+
+.settings-section h3 {
+    color: #1a202c;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    text-align: right;
+    letter-spacing: -0.3px;
+}
+
+.settings-date-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: white;
+    color: #1a202c;
+    font-family: "Cairo", sans-serif;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.settings-date-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(165, 79, 58, 0.1);
+    transform: translateY(-1px);
+}
+
+.settings-date-input:hover {
+    border-color: #cbd5e0;
+}
+
+.prayer-toggles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Prayer Toggle */
+.prayer-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.prayer-toggle__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.prayer-toggle__label:hover {
+    background: rgba(165, 79, 58, 0.1);
+}
+
+.prayer-toggle__checkbox {
+    display: none;
+}
+
+.prayer-toggle__slider {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.prayer-toggle__slider::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.prayer-toggle__checkbox:checked + .prayer-toggle__slider {
+    background: var(--primary-color);
+}
+
+.prayer-toggle__checkbox:checked + .prayer-toggle__slider::before {
+    transform: translateX(25px);
+}
+
+.prayer-toggle__text {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+.settings-popup__footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(248, 250, 252, 0.5);
+    border-radius: 0 0 18px 18px;
+    gap: 12px;
+}
+
+.settings-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: "Cairo", sans-serif;
+    min-width: 100px;
+}
+
+.settings-btn--cancel {
+    background: #f5f5f5;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.settings-btn--cancel:hover {
+    background: #e0e0e0;
+}
+
+.settings-btn--save {
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.settings-btn--save:hover {
+    background: #8b3a2a;
+}
+
+/* ================== Media Queries ================== */
+@media (max-width: 768px) {
+    .settings-icon {
+        top: 8px;
+        left: 7px;
+        width: 43px;
+        height: 43px;
+    }
+    .settings-popup-overlay {
+        backdrop-filter: blur(3px);
+    }
+}
