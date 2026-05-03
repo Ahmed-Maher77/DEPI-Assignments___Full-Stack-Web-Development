@@ -60,6 +60,7 @@ For more information about the Digital Egypt Pioneers Initiative (DEPI), visit t
 | 12  | Bootstrap Navbar                 | [Link 🔗](https://github.com/Ahmed-Maher77/Services-Showcase-Website)    | [Link 🔗](https://ahmed-maher77.github.io/Services-Showcase-Website/) |
 | 13  | Services Showcase Website                 | [Link 🔗](https://github.com/Ahmed-Maher77/Services-Showcase-Website)    | [Link 🔗](https://ahmed-maher77.github.io/Services-Showcase-Website/) |
 | 14  | Mawaqit Arabia – Islamic Prayer Times                 | [Link 🔗](https://github.com/Ahmed-Maher77/Mawaqit-Arabia___Islamic-Prayer-Times)    | [Link 🔗](https://ahmed-maher77.github.io/Mawaqit-Arabia___Islamic-Prayer-Times/) |
+| 15  | Clinica – Doctor Appointment Booking App (Final Project)                 |    | [Link 🔗](https://www.linkedin.com/posts/engy-alaa55_graduationproject-depi-digitalegyptpioneersinitiative-ugcPost-7405713680472076288-Iqcz?utm_source=share&utm_medium=member_desktop&rcm=ACoAADxaYJMBq3vC9su8VPtfe-FziMjGaqcNOsA) |
 <!--
 | 9   | Backend with Node.js & Express             | 12    | REST APIs, MongoDB, JWT, CRUD |
 | 10  | Git & GitHub                               | 3     | Version Control & Collaboration |
