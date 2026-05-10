@@ -9,6 +9,8 @@ Official DEPI certificates are shared on **Google Drive** and mirrored as PDFs i
 - **DEPI – Full Stack Web Development Diploma – Certificate** — [Google Drive](https://drive.google.com/file/d/1e2SH88D3kJs0ZcoeDJOV4QhoLmL5xZg9/view) · [PDF in repository](Certificates/DEPI%E2%80%93%20Full%20Stack%20Web%20Development%20Diploma%E2%80%93%20Certificate.pdf)
 - **DEPI – Team Leader Certificate** — [Google Drive](https://drive.google.com/file/d/1b2I6ZKZAFc1euRSmU3Sa2-7OtoFTlyTy/view) · [PDF in repository](Certificates/DEPI%E2%80%93%20Team%20Leader%20Certificate.pdf)
 
+**More certificates:** [image gallery on LinkedIn](https://www.linkedin.com/in/ahmed-maher-algohary/overlay/Position/2455229021/image-list/?profileId=ACoAADxaYJMBq3vC9su8VPtfe-FziMjGaqcNOsA) (same profile) · [Licenses & certifications](https://www.linkedin.com/in/ahmed-maher-algohary/details/certifications/)
+
 ---
 
 ## 🎯 About the Program
