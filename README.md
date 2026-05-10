@@ -4,10 +4,10 @@ This repository contains the complete collection of tasks, labs, and project wor
 
 ## 📜 Certificates
 
-Official DEPI PDFs are stored in [`Certificates/`](Certificates/):
+Official DEPI certificates are shared on **Google Drive** and mirrored as PDFs in [`Certificates/`](Certificates/).
 
-- [DEPI – Full Stack Web Development Diploma – Certificate](Certificates/DEPI%E2%80%93%20Full%20Stack%20Web%20Development%20Diploma%E2%80%93%20Certificate.pdf)
-- [DEPI – Team Leader Certificate](Certificates/DEPI%E2%80%93%20Team%20Leader%20Certificate.pdf)
+- **DEPI – Full Stack Web Development Diploma – Certificate** — [Google Drive](https://drive.google.com/file/d/1e2SH88D3kJs0ZcoeDJOV4QhoLmL5xZg9/view) · [PDF in repository](Certificates/DEPI%E2%80%93%20Full%20Stack%20Web%20Development%20Diploma%E2%80%93%20Certificate.pdf)
+- **DEPI – Team Leader Certificate** — [Google Drive](https://drive.google.com/file/d/1b2I6ZKZAFc1euRSmU3Sa2-7OtoFTlyTy/view) · [PDF in repository](Certificates/DEPI%E2%80%93%20Team%20Leader%20Certificate.pdf)
 
 ---
 
