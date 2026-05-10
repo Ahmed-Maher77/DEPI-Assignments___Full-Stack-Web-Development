@@ -2,6 +2,13 @@
 
 This repository contains the complete collection of tasks, labs, and project work completed as part of the **Digital Egypt Pioneers Initiative (DEPI)** — a comprehensive diploma program focused on professional full-stack web development.
 
+## 📜 Certificates
+
+Official DEPI PDFs are stored in [`Certificates/`](Certificates/):
+
+- [DEPI – Full Stack Web Development Diploma – Certificate](Certificates/DEPI%E2%80%93%20Full%20Stack%20Web%20Development%20Diploma%E2%80%93%20Certificate.pdf)
+- [DEPI – Team Leader Certificate](Certificates/DEPI%E2%80%93%20Team%20Leader%20Certificate.pdf)
+
 ---
 
 ## 🎯 About the Program
